@@ -37,11 +37,10 @@
   /* Add a top margin to move the entire content block down */
   margin-top: 50px; 
 }
-
 .hero-title {
   font-family: 'Inter', sans-serif;
-  /* Adjusted: Make font size slightly smaller */
-  font-size: clamp(2rem, 7vw, 5rem);
+  /* Adjusted: The font size is now significantly smaller */
+  font-size: clamp(1.8rem, 5.5vw, 4rem);
   font-weight: 900;
   color: white;
   margin: 0 0 25px 0;
@@ -50,7 +49,6 @@
   line-height: 1.1;
   white-space: nowrap; 
 }
-
 .hero-subtitle {
   display: flex;
   align-items: center;
