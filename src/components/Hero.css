@@ -2,61 +2,64 @@
 
 .hero {
   min-height: 100vh;
-  background-image: url('../assets/space-background.jpg');
+  background-image: url('../assets/Exoplanet_weby_bg.png'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* Shift content down from the center */
+  justify-content: center; 
   position: relative;
   overflow: hidden;
 }
 
-.hero::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.3);
-  z-index: 1;
-}
-
 .hero-container {
   position: relative;
-  z-index: 2;
+  z-index: 2; 
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 .hero-content {
   max-width: 900px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Add a top margin to move the entire content block down */
+  margin-top: 50px; 
 }
 
 .hero-title {
   font-family: 'Inter', sans-serif;
-  font-size: clamp(2.5rem, 8vw, 5.5rem);
+  /* Adjusted: Make font size slightly smaller */
+  font-size: clamp(2rem, 7vw, 5rem);
   font-weight: 900;
   color: white;
-  margin: 0 0 30px 0;
-  letter-spacing: 2px;
+  margin: 0 0 25px 0;
+  letter-spacing: 1px;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
   line-height: 1.1;
+  white-space: nowrap; 
 }
 
 .hero-subtitle {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 12px;
-  font-size: clamp(1.2rem, 3vw, 2rem);
+  gap: 10px;
+  /* Adjusted: Make font size slightly smaller */
+  font-size: clamp(1rem, 2.5vw, 1.6rem);
   color: white;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   font-weight: 600;
 }
 
@@ -66,12 +69,13 @@
 }
 
 .hero-description {
-  max-width: 700px;
-  margin: 0 auto 50px auto;
+  max-width: 800px;
+  margin: 0 auto 40px auto;
   color: rgba(255, 255, 255, 0.9);
-  font-size: clamp(1rem, 2vw, 1.2rem);
+  /* Adjusted: Make font size slightly smaller */
+  font-size: clamp(0.9rem, 1.5vw, 1.1rem);
   line-height: 1.6;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .hero-description p {
@@ -82,7 +86,7 @@
   background: linear-gradient(135deg, #FFD700, #FFA500);
   color: #000;
   border: none;
-  padding: 18px 36px;
+  padding: 16px 32px;
   border-radius: 12px;
   font-size: clamp(1.1rem, 2.5vw, 1.4rem);
   font-weight: 700;
