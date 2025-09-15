@@ -7,7 +7,7 @@ const Header: React.FC = () => {
       <div className="container">
         <div className="logo">
           <span className="rocket-icon">🚀</span>
-          <span className="team-name">TEAM_NAME</span>
+          <span className="team-name">Stellar Transformation</span>
         </div>
         
         <nav className="navigation">
